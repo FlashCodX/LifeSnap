@@ -20,14 +20,14 @@ MIT
 [react]: https://reactjs.org/
 [next]: https://nextjs.org/
 
-## Development Timeline:
+## Development timeline:
 
 ### 15/04/2022
 
 - Added a Navbar Component with a search option, total reponsive, with react hooks.
 
-# ![preview](./dev/15-04-2022/Navbar/nav.png)
+# ![preview](./dev/15-04-2022/nav.png)
 
-# ![preview](./dev/15-04-2022/Navbar/search.png)
+# ![preview](./dev/15-04-2022/search.png)
 
-# ![preview](./dev/15-04-2022/Navbar/mobilenav.png)
+# ![preview](./dev/15-04-2022/mobilenav.png)
