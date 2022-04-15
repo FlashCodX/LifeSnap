@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
-const userImage = require("../../../assets/userImage.jpg");
-
+import userImage from "../../../assets/userImage.jpg";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 const {

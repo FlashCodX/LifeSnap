@@ -1,5 +1,6 @@
 import styles from "./SearchDropdown.module.css";
 import type { NextPage } from "next";
+
 import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 
