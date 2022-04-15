@@ -1,0 +1,69 @@
+.container{
+position: absolute;
+bottom: -425px;
+width: 350px;
+height: 400px;
+background: var(--secondary);
+left: -130px;
+transform: scale(0);
+transition: .2s;
+animation: animate .2s forwards;
+}
+
+
+@keyframes animate {
+  100%{
+    transform: scale(1);
+  }
+}
+
+.profileImage{
+  border-radius: 50%;
+}
+
+.requestsContainer{
+ 
+  cursor: pointer;
+  display: flex;
+  padding: 10px ;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  transition: .2s;
+  display: none;
+  visibility: collapse;
+}
+
+.requestsContainer:hover{
+  background: rgba(255, 255, 255, .2);
+}
+.requests{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.requests > h1{
+  font-size: .8rem;
+
+}
+.requests > p{
+  color: gray;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+.nextIcon{
+  font-size: 2.5rem;
+}
+
+.requestsList{
+  cursor: pointer;
+  /* display: none;
+  visibility: collapse; */
+}
+
+.goBack{
+  background: rgba(255,255, 255, .1);
+font-size: 2.5rem;
+}

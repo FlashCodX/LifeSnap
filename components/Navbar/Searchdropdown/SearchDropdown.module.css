@@ -1,0 +1,107 @@
+.container{
+  left: -25%;
+  position: absolute;
+  z-index: -10000;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--secondary);
+  min-width: 300px;
+  min-height: 250px;
+  bottom: -295px;
+  padding: 10px 0;
+  animation: animate .2s forwards;
+  transform: scale(0);
+}
+
+
+@keyframes animate {
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+.searchHeader{
+  display: flex;
+  padding: 0 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.searchTitle{
+  cursor: default;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.searchClear{
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #0095f6;
+}
+
+.recentList{
+  margin-top: 20px;
+  list-style: none;
+display: flex;
+flex-direction: column;
+  overflow: auto;
+  max-height: 210px;
+}
+
+.listItem{
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  position: relative;
+padding: 10px 20px ;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.listItem:hover{
+  background: rgba(255, 255, 255, .2);
+}
+
+.profileImage{
+  border-radius: 50%;
+}
+
+.userInfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userDetails{
+  margin-top: 3px;
+  display: flex;
+  gap: 4px;
+  font-size: .7rem;
+}
+
+.userDetails > span{
+  color: gray;
+}
+
+.userInfo > h1{
+  line-height: 100%;
+  font-size: .8rem;
+}
+.closeBtn{
+  cursor: pointer;
+  font-size: 1.6rem;
+  transition: .2s;
+}
+
+.closeBtn:hover{
+  transform: scale(1.1);
+}
+
+.recentList::-webkit-scrollbar{
+  width: 0;
+}
