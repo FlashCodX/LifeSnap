@@ -111,7 +111,7 @@ const Navbar: NextPage = () => {
             </a>
           </Link>
 
-          <Link href={"/direct/inbox"} passHref>
+          <Link href={"/"} passHref>
             <a>
               {currentState === HeaderStates.messages ? (
                 <IoPaperPlaneSharp />
@@ -131,7 +131,7 @@ const Navbar: NextPage = () => {
             />
           )}
 
-          <Link href={"/direct/inbox"} passHref>
+          <Link href={"/"} passHref>
             <a>
               {currentState === HeaderStates.explore ? (
                 <AiFillCompass />
@@ -151,7 +151,7 @@ const Navbar: NextPage = () => {
               </>
             ) : (
               <AiOutlineHeart
-                onClick={() => setHeaderState(HeaderStates.notifications)}
+              // onClick={() => setHeaderState(HeaderStates.notifications)}
               />
             )}
           </div>
