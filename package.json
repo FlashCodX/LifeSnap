@@ -1,18 +1,21 @@
 {
+  "homepage": "https://FlashCodX.github.io/LifeSnap/",
   "name": "lifesnap",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
+    "deploy": "del -f node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
     "lint": "next lint"
   },
   "dependencies": {
     "gh-pages": "^3.2.3",
     "next": "12.1.4",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "react-icons": "^4.3.1"
   },
   "devDependencies": {
