@@ -36,7 +36,7 @@ MIT
 
 - Created a notification generator with an interface and a enumerator.
 - Added a subsections for the follow requests.
-- created components for likes, comments and follows.
+- Created components for likes, comments and follows.
 
 # ![preview](./dev/16-04-2022/followrequests.png)
 

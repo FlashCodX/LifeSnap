@@ -34,7 +34,7 @@ import { HiOutlineCamera } from "react-icons/hi";
 import { IoPaperPlaneOutline, IoPaperPlaneSharp } from "react-icons/io5";
 import Link from "next/link";
 import { useState } from "react";
-import SearchDropdown from "../searchdropdown/SearchDropdown";
+import UserSearch from "../userSearchComponent/UserSearch";
 import Notifications from "../notifications/Notifications";
 
 enum HeaderStates {
@@ -94,7 +94,7 @@ const Navbar: NextPage = () => {
               />
             )}
 
-            {searchActive && <SearchDropdown />}
+            {searchActive && <UserSearch />}
           </div>
         </div>
 

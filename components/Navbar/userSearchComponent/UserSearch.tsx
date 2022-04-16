@@ -1,4 +1,4 @@
-import styles from "./SearchDropdown.module.css";
+import styles from "./UserSearch.module.css";
 import type { NextPage } from "next";
 
 import Image from "next/image";
@@ -19,7 +19,7 @@ const {
 
 const listItems = Array.from(Array(19).keys());
 const userImage = require("../../../assets/userImage.jpg");
-const SearchDropdown: NextPage = () => {
+const UserSearch: NextPage = () => {
   return (
     <div className={container}>
       <header className={searchHeader}>
@@ -53,4 +53,4 @@ const SearchDropdown: NextPage = () => {
   );
 };
 
-export default SearchDropdown;
+export default UserSearch;
