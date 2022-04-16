@@ -32,7 +32,7 @@ MIT
 
 # ![preview](./dev/15-04-2022/mobilenav.png)
 
-### 15/04/2022
+### 16/04/2022
 
 - Created a notification generator with an interface and a enumerator.
 - Added a subsections for the follow requests.
