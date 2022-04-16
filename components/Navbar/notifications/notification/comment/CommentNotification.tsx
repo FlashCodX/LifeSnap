@@ -35,7 +35,7 @@ interface NotificationInterface {
 
 const listItems = Array.from(Array(19).keys());
 const userImage = require("../../../assets/userImage.jpg");
-const Notification: NextPage = ({ Type }) => {
+const Notification: NextPage = () => {
   const [showList, setShowList] = useState(false);
   return <div className={container}></div>;
 };
