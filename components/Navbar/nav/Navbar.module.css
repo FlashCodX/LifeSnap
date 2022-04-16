@@ -18,14 +18,14 @@
 
 .logo{
   font-size: 30px;
-  font-weight: 500;
+  font-style: italic;
+  font-weight: 400;
   cursor: pointer;
 }
 
 .searchContainer{
-  height: 30px;
   display: flex;
-  min-width: 200px;
+  min-width: 250px;
   position: relative;
   align-content: center;
   align-items: center;
@@ -53,10 +53,9 @@
   outline: none;
   border: none;
   color: white;
-  height: 35px;
-  border-radius: 10px;
+  height: 40px;
+  border-radius: 5px;
   text-indent: 30px;
-
 }
 
 

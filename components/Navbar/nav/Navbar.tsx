@@ -34,7 +34,7 @@ import { HiOutlineCamera } from "react-icons/hi";
 import { IoPaperPlaneOutline, IoPaperPlaneSharp } from "react-icons/io5";
 import Link from "next/link";
 import { useState } from "react";
-import SearchDropdown from "../Searchdropdown/SearchDropdown";
+import SearchDropdown from "../searchdropdown/SearchDropdown";
 import Notifications from "../notifications/Notifications";
 
 enum HeaderStates {
@@ -151,7 +151,7 @@ const Navbar: NextPage = () => {
               </>
             ) : (
               <AiOutlineHeart
-              // onClick={() => setHeaderState(HeaderStates.notifications)}
+                onClick={() => setHeaderState(HeaderStates.notifications)}
               />
             )}
           </div>

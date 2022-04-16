@@ -69,7 +69,7 @@ animation: animate .2s forwards;
 display: flex;
 flex-direction: column;
   overflow: auto;
-  max-height: 343px;
+  max-height: 320px;
 }
 .recentList::-webkit-scrollbar{
   width: 0;
@@ -117,10 +117,5 @@ padding: 10px 20px ;
 
 .goBack{
   background: rgba(255,255, 255, .1);
-font-size: 2.3rem;
-}
-
-
-.goBack:hover{
-  background: rgba(255, 255, 255, .2);
+font-size: 2.5rem;
 }
