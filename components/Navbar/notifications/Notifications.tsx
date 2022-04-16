@@ -42,7 +42,7 @@ const Notifications: NextPage = () => {
         <div className={requestsList}>
           <header className={goBack} onClick={() => setShowList(false)}>
             <MdNavigateBefore />
-            <button>Clear Noti</button>
+            {/* <button>Clear Noti</button> */}
           </header>
           <ul className={recentList}>
             {listItems.map((_, i) => (

@@ -31,3 +31,15 @@ MIT
 # ![preview](./dev/15-04-2022/search.png)
 
 # ![preview](./dev/15-04-2022/mobilenav.png)
+
+### 15/04/2022
+
+- Created a notification generator with an interface and a enumerator.
+- Added a subsections for the follow requests.
+- created components for likes, comments and follows.
+
+# ![preview](./dev/16-04-2022/followrequests.png)
+
+# ![preview](./dev/16-04-2022/requeststab.png)
+
+# ![preview](./dev/16-04-2022/filescreated.png)
