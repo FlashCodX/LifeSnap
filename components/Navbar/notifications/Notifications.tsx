@@ -51,10 +51,9 @@ const Notifications: NextPage = () => {
   const [pickedType, setPickedType] = useState<NotificationTypes>(
     NotificationTypes.none
   );
-  console.log(pickedType);
   return (
     <div className={container}>
-      {!pickedType.none ? (
+      {!pickedType ? (
         <>
           <MenuItem
             icon={<FaUserPlus />}
