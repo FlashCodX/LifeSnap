@@ -1,10 +1,20 @@
 export enum NotificationTypes {
-    comment,
-    like,
-    mention,
-    follow,
-    acceptfollow,
-  }
+  none,
+  comment,
+  like,
+  mention,
+  follow,
+  followRequest,
+}
+
+export enum HeaderStates {
+  home,
+  messages,
+  upload,
+  explore,
+  notifications,
+  profile,
+}
   
  export interface NotificationInterface {
      id: string | number
@@ -13,9 +23,3 @@ export enum NotificationTypes {
   }
 
 
-
-  export class Notification {
-      
-
-
-  }

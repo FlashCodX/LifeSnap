@@ -36,28 +36,26 @@ import Link from "next/link";
 import { useState } from "react";
 import UserSearch from "../userSearchComponent/UserSearch";
 import Notifications from "../notifications/Notifications";
-
-enum HeaderStates {
-  home,
-  messages,
-  upload,
-  explore,
-  notifications,
-  profile,
-}
-
+import { HeaderStates } from "../../../types";
+import { useDispatch, useSelector } from "react-redux";
+import { actionCreators } from "../../../redux";
+import { bindActionCreators } from "redux";
 const Navbar: NextPage = () => {
   const [searchActive, setSearchActive] = useState(false);
   const [searchValue, setSearchValue] = useState("");
-  const [currentState, setHeaderState] = useState<HeaderStates>(
-    HeaderStates.home
-  );
+  // const [currentState, setHeaderState] = useState<HeaderStates>(
+  //   HeaderStates.notifications
+  // );
 
+  const { navState }: any = useSelector((state) => state);
+  const dispatch = useDispatch();
+  const { setNavState } = bindActionCreators(actionCreators, dispatch);
   const delay: any = async () => {
     setTimeout(() => {
       setSearchActive(false);
     }, 150);
   };
+  console.log(navState);
   return (
     <div className={nav}>
       <div className={contentContainer}>
@@ -101,66 +99,64 @@ const Navbar: NextPage = () => {
         <div className={navItems}>
           <Link href={"/"} passHref>
             <a>
-              {currentState === HeaderStates.home ? (
+              {navState === HeaderStates.home ? (
                 <AiFillHome />
               ) : (
-                <AiOutlineHome
-                  onClick={() => setHeaderState(HeaderStates.home)}
-                />
+                <AiOutlineHome onClick={() => setNavState(HeaderStates.home)} />
               )}
             </a>
           </Link>
 
           <Link href={"/"} passHref>
             <a>
-              {currentState === HeaderStates.messages ? (
+              {navState === HeaderStates.messages ? (
                 <IoPaperPlaneSharp />
               ) : (
                 <IoPaperPlaneOutline
-                  onClick={() => setHeaderState(HeaderStates.messages)}
+                  onClick={() => setNavState(HeaderStates.messages)}
                 />
               )}
             </a>
           </Link>
 
-          {currentState === HeaderStates.upload ? (
+          {navState === HeaderStates.upload ? (
             <AiFillPlusCircle />
           ) : (
             <AiOutlinePlusCircle
-              onClick={() => setHeaderState(HeaderStates.upload)}
+              onClick={() => setNavState(HeaderStates.upload)}
             />
           )}
 
           <Link href={"/"} passHref>
             <a>
-              {currentState === HeaderStates.explore ? (
+              {navState === HeaderStates.explore ? (
                 <AiFillCompass />
               ) : (
                 <AiOutlineCompass
-                  onClick={() => setHeaderState(HeaderStates.explore)}
+                  onClick={() => setNavState(HeaderStates.explore)}
                 />
               )}
             </a>
           </Link>
 
           <div className={NotificationsContainer}>
-            {currentState === HeaderStates.notifications ? (
+            {navState === HeaderStates.notifications ? (
               <>
                 <AiFillHeart />
                 <Notifications />
               </>
             ) : (
               <AiOutlineHeart
-                onClick={() => setHeaderState(HeaderStates.notifications)}
+                onClick={() => setNavState(HeaderStates.notifications)}
               />
             )}
           </div>
 
           <Image
-            onClick={() => setHeaderState(HeaderStates.profile)}
+            onClick={() => setNavState(HeaderStates.profile)}
             className={profileImage}
             style={
-              currentState === HeaderStates.profile
+              navState === HeaderStates.profile
                 ? { background: "white" }
                 : { background: "transparent" }
             }

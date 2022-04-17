@@ -43,3 +43,13 @@ MIT
 # ![preview](./dev/16-04-2022/requeststab.png)
 
 # ![preview](./dev/16-04-2022/filescreated.png)
+
+### 17/04/2022
+
+- Changed the notification UI into sections.
+- Implemented redux.
+- Added functionality to navbar with global state managment.
+
+# ![preview](./dev/17-04-2022/addedFiles.png)
+
+# ![preview](./dev/17-04-2022/newUI.png)

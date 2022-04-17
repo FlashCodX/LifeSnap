@@ -57,7 +57,7 @@ animation: animate .2s forwards;
 }
 
 .requestsList{
-  cursor: pointer;
+  /* cursor: pointer; */
   /* display: none;
   visibility: collapse; */
 }
@@ -118,9 +118,19 @@ padding: 10px 20px ;
 .goBack{
   background: rgba(255,255, 255, .1);
 font-size: 2.3rem;
+display: flex;
+padding: 10px 10px;
+justify-content: space-between;
+}
+
+.goBack > button{
+  cursor: pointer;
+  background: none;
+  color: aqua;
+  border: none;
 }
 
 
 .goBack:hover{
-  background: rgba(255, 255, 255, .2);
+  /* background: rgba(255, 255, 255, .2); */
 }
